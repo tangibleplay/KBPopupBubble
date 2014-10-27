@@ -26,6 +26,9 @@
 
 #import "KBPopupBubbleView.h"
 
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
 @interface KBPopupBubbleView (Animations)
 
 - (void)popIn;

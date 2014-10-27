@@ -26,6 +26,9 @@
 
 #import "KBPopupHeaders.h"
 
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
 typedef void (^KBPopupBubbleCompletionBlock)(void);
 
 // Placeholder constants for user to use, for simplicity
@@ -43,7 +46,7 @@ typedef void (^KBPopupBubbleCompletionBlock)(void);
 #define kKBAnimationKeyShadowPosition   @"shadowPosition"
 
 // Which side of the bubble to render the pointer
-enum {
+enum KBSide{
     kKBPopupPointerSideTop,
     kKBPopupPointerSideBottom,
     kKBPopupPointerSideLeft,
@@ -72,6 +75,11 @@ enum {
 #define kKBPopupDefaultShadowOffset          CGSizeMake(5.0f, 5.0f)
 #define kKBPopupDefaultPosition              kKBPopupPointerPositionMiddle
 #define kKBPopupDefaultSide                  kKBPopupPointerSideTop
+
+// size constants
+static const CGFloat kKBDefaultMargin      = 8.0f;     // <-- works best if it matches kKBArrowHeight
+static const CGFloat kKBDefaultPaddingTop  = 8.0f;
+static const CGFloat kKBDefaultPaddingSide = 12.0f;
 
 #pragma mark -
 #pragma mark Delegate Protocol

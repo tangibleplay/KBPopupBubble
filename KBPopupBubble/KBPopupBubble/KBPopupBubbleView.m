@@ -32,9 +32,6 @@
 
 static const CGFloat kKBDefaultWidth       = 200.0f;
 static const CGFloat kKBDefaultHeight      = 120.0f;
-static const CGFloat kKBDefaultMargin      = 8.0f;     // <-- works best if it matches kKBArrowHeight
-static const CGFloat kKBDefaultPaddingTop  = 8.0f;
-static const CGFloat kKBDefaultPaddingSide = 12.0f;
 
 static const CGFloat kKBDefaultSlideDuration = 0.4f;
 

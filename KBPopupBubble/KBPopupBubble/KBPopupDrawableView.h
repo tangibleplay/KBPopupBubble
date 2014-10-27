@@ -26,6 +26,9 @@
 
 #import "KBPopupBubbleView.h"
 
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
 //
 // (1) Works best if kKBArrowHeight matches kKBDefaultMargin
 // (2) kKBPopupArrowAdjustment is a slight adjustment to make animations work more smoothly
